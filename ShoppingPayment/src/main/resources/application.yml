@@ -1,0 +1,22 @@
+server:
+  port: 80
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://47.105.153.18:80/eureka-one/eureka/,http://47.105.153.18:8080/eureka-two/eureka/
+  instance:
+    preferIpAddress: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+spring:
+  application:
+    name: ShoppingPayment
+  datasource:
+    url: jdbc:mysql://rm-m5erffchjea858x66do.mysql.rds.aliyuncs.com:3306/pay_db?useUnicode=true&characterEncoding=utf-8&useSSL=true&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull
+    username: fkgou
+    password: Gfkaliyun_123
+    driver-class-name: com.mysql.jdbc.Driver
+  rabbitmq:
+    host: 212.64.40.168
+    port: 5672
+    username: alan
+    password: alan

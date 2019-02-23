@@ -1,0 +1,864 @@
+2018-12-25 02:01:42 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bffedb4: startup date [Tue Dec 25 02:01:42 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@f083da4
+2018-12-25 02:02:02 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:02:06 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:02:37 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:02:42 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:02:49 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:02:57 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:02:58 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:03:38 Thread-9 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bffedb4: startup date [Tue Dec 25 02:01:42 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@f083da4
+2018-12-25 02:03:39 Thread-9 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:03:39 Thread-9 INFO Unregistering JMX-exposed beans
+2018-12-25 02:03:42 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51d5f094: startup date [Tue Dec 25 02:03:42 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@74c3e32e
+2018-12-25 02:03:50 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:03:51 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:58 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:03:59 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:04:01 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:04:03 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:06:40 Thread-14 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51d5f094: startup date [Tue Dec 25 02:03:42 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@74c3e32e
+2018-12-25 02:06:40 Thread-14 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:06:40 Thread-14 INFO Unregistering JMX-exposed beans
+2018-12-25 02:06:44 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41b4ad8d: startup date [Tue Dec 25 02:06:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad
+2018-12-25 02:06:47 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:06:48 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:06:55 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:06:56 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:06:57 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:07:02 restartedMain ERROR Could not register JmxEndpoint [auditEventsEndpoint]
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.AuditEventsJmxEndpoint@39b277b6] with key 'auditEventsEndpoint'; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerJmxEndpoints(EndpointMBeanExporter.java:174)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:162)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:158)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:337)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fkgou.ShoppingPayment.web.ShoppingPaymentApplication.main(ShoppingPaymentApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.parentContextContainsSameBean(EndpointMBeanExporter.java:286)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:271)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:260)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:658)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:618)
+	... 24 common frames omitted
+2018-12-25 02:07:02 restartedMain ERROR Could not register MBean for endpoint [archaiusEndpoint]
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@41985b4e] with key 'archaiusEndpoint'; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:214)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoints(EndpointMBeanExporter.java:191)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:158)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:337)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fkgou.ShoppingPayment.web.ShoppingPaymentApplication.main(ShoppingPaymentApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.parentContextContainsSameBean(EndpointMBeanExporter.java:286)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:271)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:260)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:658)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624)
+	... 25 common frames omitted
+2018-12-25 02:07:02 restartedMain ERROR Could not register MBean for endpoint [featuresEndpoint]
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@2a64e0e7] with key 'featuresEndpoint'; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:214)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoints(EndpointMBeanExporter.java:191)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:158)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:337)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fkgou.ShoppingPayment.web.ShoppingPaymentApplication.main(ShoppingPaymentApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.parentContextContainsSameBean(EndpointMBeanExporter.java:286)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:271)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:260)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:658)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624)
+	... 25 common frames omitted
+2018-12-25 02:07:02 restartedMain ERROR Could not register MBean for endpoint [requestMappingEndpoint]
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@5f9d1dff] with key 'requestMappingEndpoint'; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:214)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoints(EndpointMBeanExporter.java:191)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:158)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:337)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fkgou.ShoppingPayment.web.ShoppingPaymentApplication.main(ShoppingPaymentApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.parentContextContainsSameBean(EndpointMBeanExporter.java:286)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:271)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:260)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:658)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624)
+	... 25 common frames omitted
+2018-12-25 02:07:02 restartedMain ERROR Could not register MBean for endpoint [environmentEndpoint]
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@473052c8] with key 'environmentEndpoint'; nested exception is java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:214)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoints(EndpointMBeanExporter.java:191)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:158)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:337)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:175)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:50)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:348)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:151)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:114)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fkgou.ShoppingPayment.web.ShoppingPaymentApplication.main(ShoppingPaymentApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad has been closed already
+	at org.springframework.context.support.AbstractApplicationContext.assertBeanFactoryActive(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1079)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.parentContextContainsSameBean(EndpointMBeanExporter.java:286)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:271)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.getObjectName(EndpointMBeanExporter.java:260)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:658)
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624)
+	... 25 common frames omitted
+2018-12-25 02:07:03 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@603b15ac: startup date [Tue Dec 25 02:07:03 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@71dbcc3e
+2018-12-25 02:07:06 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:07:06 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:13 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:07:14 restartedMain WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2018-12-25 02:07:14 restartedMain INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:07:14 restartedMain INFO 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-12-25 02:07:14 restartedMain ERROR Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fkgou.ShoppingPayment.web.ShoppingPaymentApplication.main(ShoppingPaymentApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+2018-12-25 02:07:34 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@12fed256: startup date [Tue Dec 25 02:07:34 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@65ed912c
+2018-12-25 02:07:39 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:07:39 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:07:46 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:07:46 restartedMain WARN Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2018-12-25 02:07:46 restartedMain INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:07:47 restartedMain INFO 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2018-12-25 02:07:47 restartedMain ERROR Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.fkgou.ShoppingPayment.web.ShoppingPaymentApplication.main(ShoppingPaymentApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 common frames omitted
+2018-12-25 02:08:48 RMI TCP Connection(2)-192.168.8.187 INFO Application shutdown requested.
+2018-12-25 02:08:48 RMI TCP Connection(2)-192.168.8.187 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@41b4ad8d: startup date [Tue Dec 25 02:06:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@442920ad
+2018-12-25 02:08:49 RMI TCP Connection(2)-192.168.8.187 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:09:10 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31806d17: startup date [Tue Dec 25 02:09:10 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3ab88fb5
+2018-12-25 02:09:24 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:09:27 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:09:45 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:09:49 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:09:55 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:10:04 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:10:05 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:12:58 Thread-9 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31806d17: startup date [Tue Dec 25 02:09:10 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3ab88fb5
+2018-12-25 02:12:59 Thread-9 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:12:59 Thread-9 INFO Unregistering JMX-exposed beans
+2018-12-25 02:13:03 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b8f3ecb: startup date [Tue Dec 25 02:13:03 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@273cc032
+2018-12-25 02:13:12 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:13:13 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:21 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:22 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:13:24 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:13:26 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:13:27 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:13:27 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:13:27 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:13:27 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:13:27 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:13:40 Thread-15 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b8f3ecb: startup date [Tue Dec 25 02:13:03 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@273cc032
+2018-12-25 02:13:41 Thread-15 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:13:41 Thread-15 INFO Unregistering JMX-exposed beans
+2018-12-25 02:13:44 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@934c0aa: startup date [Tue Dec 25 02:13:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1da6324d
+2018-12-25 02:13:49 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:13:50 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:13:58 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:13:58 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:13:59 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:14:01 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:14:02 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:14:19 Thread-25 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@934c0aa: startup date [Tue Dec 25 02:13:44 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1da6324d
+2018-12-25 02:14:20 Thread-25 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:14:20 Thread-25 INFO Unregistering JMX-exposed beans
+2018-12-25 02:14:25 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@561c9399: startup date [Tue Dec 25 02:14:25 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@787760ec
+2018-12-25 02:14:30 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:14:31 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:14:39 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:14:41 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:14:43 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:14:48 Thread-35 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@561c9399: startup date [Tue Dec 25 02:14:25 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@787760ec
+2018-12-25 02:14:48 Thread-35 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:14:48 Thread-35 INFO Unregistering JMX-exposed beans
+2018-12-25 02:14:52 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39fe66dc: startup date [Tue Dec 25 02:14:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64dfde9e
+2018-12-25 02:14:56 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:14:56 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:02 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:03 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:15:04 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:15:06 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:15:09 Thread-45 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39fe66dc: startup date [Tue Dec 25 02:14:52 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64dfde9e
+2018-12-25 02:15:10 Thread-45 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:15:10 Thread-45 INFO Unregistering JMX-exposed beans
+2018-12-25 02:15:13 restartedMain INFO Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48be497: startup date [Tue Dec 25 02:15:13 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7893e7c6
+2018-12-25 02:15:18 restartedMain INFO Tomcat initialized with port(s): 8080 (http)
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'metricsFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'traceFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-12-25 02:15:18 localhost-startStop-1 INFO Mapping servlet: 'dispatcherServlet' to [/]
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/channels || /channels.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2018-12-25 02:15:25 restartedMain INFO Mapped "{[/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2018-12-25 02:15:27 restartedMain INFO LiveReload server is running on port 35729
+2018-12-25 02:15:29 restartedMain INFO Registering beans for JMX exposure on startup
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'archaiusEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=archaiusEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'featuresEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=featuresEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'busEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=busEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Located managed bean 'channelsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=channelsEndpoint]
+2018-12-25 02:15:32 restartedMain INFO Tomcat started on port(s): 8080 (http)
+2018-12-25 02:17:18 RMI TCP Connection(2)-192.168.8.187 INFO Application shutdown requested.
+2018-12-25 02:17:18 RMI TCP Connection(2)-192.168.8.187 INFO Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@48be497: startup date [Tue Dec 25 02:15:13 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7893e7c6
+2018-12-25 02:17:19 RMI TCP Connection(2)-192.168.8.187 INFO Unregistering JMX-exposed beans on shutdown
+2018-12-25 02:17:19 RMI TCP Connection(2)-192.168.8.187 INFO Unregistering JMX-exposed beans
